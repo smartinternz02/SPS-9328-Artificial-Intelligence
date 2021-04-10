@@ -1,0 +1,1899 @@
+{
+  "intents": [
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "good mrng"
+        },
+        {
+          "text": "hello"
+        }
+      ],
+      "description": "greets user"
+    },
+    {
+      "intent": "query",
+      "examples": [
+        {
+          "text": "what are functions of this bot?"
+        },
+        {
+          "text": "What will this bot do ?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "reminder",
+      "examples": [
+        {
+          "text": "add a reminder"
+        },
+        {
+          "text": "reminder"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "schedule",
+      "examples": [
+        {
+          "text": "schedule"
+        },
+        {
+          "text": "schedule a evening routine"
+        },
+        {
+          "text": "schedule a morning routine"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "todolist",
+      "examples": [
+        {
+          "text": "create a task in todo"
+        },
+        {
+          "text": "create a todo"
+        },
+        {
+          "text": "create a todolist"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "greeting",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "good afternoon",
+          "synonyms": [
+            "good aftrn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good evening",
+          "synonyms": [
+            "good evng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good morning",
+          "synonyms": [
+            "gm ",
+            "good mrng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hello",
+          "synonyms": [
+            "hey",
+            "hi"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "option",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "reminder",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "schedule",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "to-do list",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "query",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "bot",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "remoption",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "event",
+          "synonyms": [
+            "anniversary",
+            "bday",
+            "birthday",
+            "birthdays",
+            "celebration",
+            "dinner",
+            "housewarming",
+            "wedding"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "exercise",
+          "synonyms": [
+            "cardio",
+            "exercises",
+            "fit",
+            "fitness",
+            "refresher",
+            "trainings",
+            "workout",
+            "workouts"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "meeting",
+          "synonyms": [
+            "briefing",
+            "conferences",
+            "consultation",
+            "consultations",
+            "discussions",
+            "gatherings",
+            "meetings",
+            "presentations",
+            "seminars",
+            "session"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Study",
+          "synonyms": [
+            "coursework",
+            "education",
+            "exam",
+            "examination",
+            "examinations",
+            "research",
+            "studies",
+            "work"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "schedule",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "schedule",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "schoption",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "evening",
+          "synonyms": [
+            "evenings",
+            "night",
+            "sunset"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "morning",
+          "synonyms": [
+            "day",
+            "mornings",
+            "sunrise"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Sunrisers",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "assignments",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "client meeting",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "college",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "drink water",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "excercise",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "office",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "study",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "wakeup",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "yoga",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Sunsetters",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "dinner",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "excercise",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "get fresh",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "meetings",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "movie",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "office work",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "play",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "spend time with family",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "study",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-percentage",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "todo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "attend party",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "doctor appointment",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "practice math",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "read a book",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "shopping",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_8_1617980171137",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter date"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1618031792625",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1618031792626",
+      "previous_sibling": "handler_1_1618031792626"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "enter date"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1618032257480",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1618032257489",
+      "previous_sibling": "handler_7_1618032257489"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1618036309996",
+      "context": {
+        "todo_5": "@todo"
+      },
+      "conditions": "@todo",
+      "event_name": "input",
+      "dialog_node": "handler_10_1618036309997"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1618036522518",
+      "context": {
+        "Sunrisers_2": "@Sunrisers"
+      },
+      "conditions": "@Sunrisers",
+      "event_name": "input",
+      "dialog_node": "handler_10_1618036522518"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1618036604226",
+      "context": {
+        "Sunrisers_3": "@Sunrisers"
+      },
+      "conditions": "@Sunrisers",
+      "event_name": "input",
+      "dialog_node": "handler_10_1618036604226"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1618037122555",
+      "context": {
+        "Sunsetters_2": "@Sunsetters"
+      },
+      "conditions": "@Sunsetters",
+      "event_name": "input",
+      "dialog_node": "handler_10_1618037122557"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1618037171605",
+      "context": {
+        "Sunsetters_5": "@Sunsetters"
+      },
+      "conditions": "@Sunsetters",
+      "event_name": "input",
+      "dialog_node": "handler_10_1618037171605"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_7_1617984411915",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618027895042"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_3_1618027465418",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618028724755"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1618028725534",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_1_1618028725548"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_3_1617984414157",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618030117980"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1618030118726",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_1_1618030118740"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1618031792625",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_1_1618031792626"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_8_1617982925284",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618032256761"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter Event max 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1618032422822",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618032422823",
+      "previous_sibling": "handler_5_1618032422823"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1618036604226",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618036604226",
+      "previous_sibling": "handler_10_1618036604226"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1618036849163",
+      "context": {
+        "date_3": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_1_1618036849163"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1618037143607",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618037143607",
+      "previous_sibling": "handler_5_1618037143607"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1618037155175",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618037155175",
+      "previous_sibling": "handler_4_1618037155175"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1618037208252",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618037208252",
+      "previous_sibling": "handler_7_1618037208252"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1617984413238",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1618029628329",
+      "previous_sibling": "slot_1_1618029771441"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter the time"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1618029771441",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1618029771442",
+      "previous_sibling": "handler_8_1618029771442"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_8_1617982923008",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1618030434613",
+      "previous_sibling": "slot_2_1618036872467"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ent"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617981090610",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1618035912823"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Entered list order upto max 5 tasks"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1618035989771",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1618035989778",
+      "previous_sibling": "handler_6_1618035989778"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1618036272059",
+      "context": {
+        "todo_3": "@todo"
+      },
+      "conditions": "@todo",
+      "event_name": "input",
+      "dialog_node": "handler_2_1618036272059"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "enter time sequentially for above events eg: at 6,at 7 etc...."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1618032289707",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1618032289708",
+      "previous_sibling": "handler_9_1618032289708"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_5_1618035116205",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1618035989043"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1618036253317",
+      "context": {
+        "todo_2": "@todo"
+      },
+      "conditions": "@todo",
+      "event_name": "input",
+      "dialog_node": "handler_3_1618036253318"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1618036298228",
+      "context": {
+        "todo_4": "@todo"
+      },
+      "conditions": "@todo",
+      "event_name": "input",
+      "dialog_node": "handler_3_1618036298228"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1618036298228",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1618036298228",
+      "previous_sibling": "handler_3_1618036298228"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1618036858667",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1618036858668",
+      "previous_sibling": "handler_7_1618036858668"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1618036872467",
+      "context": {
+        "date_5": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_4_1618036872468"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1618037155175",
+      "context": {
+        "Sunsetters_4": "@Sunsetters"
+      },
+      "conditions": "@Sunsetters",
+      "event_name": "input",
+      "dialog_node": "handler_4_1618037155175"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1618037196771",
+      "context": {
+        "time_2": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_4_1618037196772"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1618037220835",
+      "context": {
+        "time_4": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_4_1618037220835"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "enter in format  eg: Friday April 10"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1618028725534",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1618028725548",
+      "previous_sibling": "handler_1_1618028725548"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1618032422822",
+      "context": {
+        "Sunsetters": "@Sunsetters"
+      },
+      "conditions": "@Sunsetters",
+      "event_name": "input",
+      "dialog_node": "handler_5_1618032422823"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1618036309996",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1618036309997",
+      "previous_sibling": "handler_10_1618036309997"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1618036682840",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1618036682840",
+      "previous_sibling": "handler_8_1618036682840"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1618036828725",
+      "context": {
+        "date_2": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_5_1618036828726"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1618037143607",
+      "context": {
+        "Sunsetters_3": "@Sunsetters"
+      },
+      "conditions": "@Sunsetters",
+      "event_name": "input",
+      "dialog_node": "handler_5_1618037143607"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1618037229839",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1618037229839",
+      "previous_sibling": "handler_9_1618037229839"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "At What time do you want to Study?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1618030118726",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1618030118740",
+      "previous_sibling": "handler_1_1618030118740"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1618035989771",
+      "context": {
+        "todo": "@todo"
+      },
+      "conditions": "@todo",
+      "event_name": "input",
+      "dialog_node": "handler_6_1618035989778"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1618036272059",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1618036272059",
+      "previous_sibling": "handler_2_1618036272059"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1618036522518",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1618036522518",
+      "previous_sibling": "handler_10_1618036522518"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1618036849163",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1618036849163",
+      "previous_sibling": "handler_1_1618036849163"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1618037220835",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1618037220836",
+      "previous_sibling": "handler_4_1618037220835"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1618029043143",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_7_1618029043144"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "enter time sequentially for above events eg: at 6,at 7 etc...."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1618031809771",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1618031809772",
+      "previous_sibling": "handler_8_1618031809772"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1618032257480",
+      "context": {
+        "date": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_7_1618032257489"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1618036253317",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1618036253318",
+      "previous_sibling": "handler_3_1618036253318"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1618036708858",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1618036708858",
+      "previous_sibling": "handler_9_1618036708858"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1618036858667",
+      "context": {
+        "date_4": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_7_1618036858668"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1618037122555",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1618037122557",
+      "previous_sibling": "handler_10_1618037122557"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1618037196771",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1618037196772",
+      "previous_sibling": "handler_4_1618037196772"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1618037208252",
+      "context": {
+        "time_3": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_7_1618037208252"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter the time :Recognizes the following formats: at 10 10:30 now from 5pm at 14:10"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1618029043143",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1618029043144",
+      "previous_sibling": "handler_7_1618029043144"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1618029771441",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_8_1618029771442"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1618031809771",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_8_1618031809772"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1618031925748",
+      "context": {
+        "Sunrisers": "@Sunrisers"
+      },
+      "conditions": "@Sunrisers",
+      "event_name": "input",
+      "dialog_node": "handler_8_1618031925749"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1618036682840",
+      "context": {
+        "Sunrisers_4": "@Sunrisers"
+      },
+      "conditions": "@Sunrisers",
+      "event_name": "input",
+      "dialog_node": "handler_8_1618036682840"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1618036872467",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1618036872468",
+      "previous_sibling": "handler_4_1618036872468"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1618037171605",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1618037171605",
+      "previous_sibling": "handler_10_1618037171605"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Enter Events max 5"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1618031925748",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1618031925749",
+      "previous_sibling": "handler_8_1618031925749"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1618032289707",
+      "context": {
+        "time": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_9_1618032289708"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1618036708858",
+      "context": {
+        "Sunrisers_5": "@Sunrisers"
+      },
+      "conditions": "@Sunrisers",
+      "event_name": "input",
+      "dialog_node": "handler_9_1618036708858"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1618036828725",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1618036828726",
+      "previous_sibling": "handler_5_1618036828726"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1618037229839",
+      "context": {
+        "time_5": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_9_1618037229839"
+    },
+    {
+      "type": "standard",
+      "title": "events for morning routine",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Available events :  Study,excercise,yoga,client meeting,wake up,office,drink water etc...\nenter 5 options sequentially"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617981089377",
+      "conditions": "@schoption:morning",
+      "dialog_node": "node_2_1618033116879"
+    },
+    {
+      "type": "standard",
+      "title": "evening routine",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "events are play,study,excercise, spend time with family,movies,fresh up,dinner etc....\nenter 5 options sequentially"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_3_1617981089377",
+      "conditions": "@schoption:evening",
+      "dialog_node": "node_2_1618033758554",
+      "previous_sibling": "node_2_1618033116879"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "What kind of schedule ?",
+            "options": [
+              {
+                "label": "Morning Routine",
+                "value": {
+                  "input": {
+                    "text": "After Sunrise"
+                  }
+                }
+              },
+              {
+                "label": "Evening Routine",
+                "value": {
+                  "input": {
+                    "text": "After Sunset"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1617980171137",
+      "conditions": "@option:schedule || #schedule",
+      "dialog_node": "node_3_1617981089377",
+      "previous_sibling": "node_5_1617980670132"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter your to-do list in sequential order..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617980171137",
+      "conditions": "@option:(to-do list) || #todolist",
+      "dialog_node": "node_3_1617981090610",
+      "previous_sibling": "node_3_1617981089377"
+    },
+    {
+      "type": "frame",
+      "title": "Study",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your time to Study At $time has been set,be punctual and Successful!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1617980670132",
+      "conditions": "@remoption:Study",
+      "dialog_node": "node_3_1617984414157",
+      "previous_sibling": "node_9_1617984413238"
+    },
+    {
+      "type": "frame",
+      "title": "date options",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your reminder is set on $date at $time"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617984411915",
+      "conditions": "@remoption:event",
+      "dialog_node": "node_3_1618027465418",
+      "previous_sibling": "handler_1_1618027895042"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "remind you to ?",
+            "options": [
+              {
+                "label": "Event",
+                "value": {
+                  "input": {
+                    "text": "event"
+                  }
+                }
+              },
+              {
+                "label": "Exercise",
+                "value": {
+                  "input": {
+                    "text": "exercise"
+                  }
+                }
+              },
+              {
+                "label": "Study",
+                "value": {
+                  "input": {
+                    "text": "study"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1617980171137",
+      "conditions": "@option:reminder || #reminder",
+      "dialog_node": "node_5_1617980670132"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your to-do list \n$todo\n$todo_2\n$todo_3\n$todo_4\n$todo_5"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_3_1617981090610",
+      "conditions": "@todo",
+      "dialog_node": "node_5_1618035116205",
+      "previous_sibling": "handler_2_1618035912823"
+    },
+    {
+      "type": "standard",
+      "title": "Greeting",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1617980171137"
+      },
+      "conditions": "#greeting || @greeting",
+      "dialog_node": "node_7_1617979746175",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "title": "select a reminder",
+            "options": [
+              {
+                "label": "birthday",
+                "value": {
+                  "input": {
+                    "text": "birthday"
+                  }
+                }
+              },
+              {
+                "label": "anniversary",
+                "value": {
+                  "input": {
+                    "text": "anniversary"
+                  }
+                }
+              },
+              {
+                "label": "meeting",
+                "value": {
+                  "input": {
+                    "text": "meeting"
+                  }
+                }
+              },
+              {
+                "label": "deadlines",
+                "value": {
+                  "input": {
+                    "text": "deadlines"
+                  }
+                }
+              }
+            ],
+            "description": "options",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1617980670132",
+      "conditions": "@remoption:event",
+      "dialog_node": "node_7_1617984411915"
+    },
+    {
+      "type": "standard",
+      "title": "options",
+      "output": {
+        "generic": [
+          {
+            "title": "options:",
+            "options": [
+              {
+                "label": "reminder",
+                "value": {
+                  "input": {
+                    "text": "reminder"
+                  }
+                }
+              },
+              {
+                "label": "schedule",
+                "value": {
+                  "input": {
+                    "text": "schedule"
+                  }
+                }
+              },
+              {
+                "label": "To-do list",
+                "value": {
+                  "input": {
+                    "text": "To-do list"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@query:bot",
+      "dialog_node": "node_8_1617980171137",
+      "previous_sibling": "node_7_1617979746175"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Event1  $Sunrisers  is set at $time\nEvent2  $Sunrisers_2 is set at $date_2\nEvent3  $Sunrisers_3 is set at $date_3\nEvent4  $Sunrisers_4 is set at $date_4\nEvent5  $Sunrisers_5 is set at $date_5\n  in morning routine on $date"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1618033116879",
+      "conditions": "@Sunrisers",
+      "dialog_node": "node_8_1617982923008"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your events\n$Sunsetters is set at $time\n$Sunsetters_2 is set at $time_2\n$Sunsetters_3 is set at $time_3\n$Sunsetters_4 is set at $time_4\n$Sunsetters_5 is set at $time_5\nIn the Evening routine"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1618033758554",
+      "conditions": "@Sunsetters",
+      "dialog_node": "node_8_1617982925284"
+    },
+    {
+      "type": "frame",
+      "title": "Exercise",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Reminder for your Excercise Set at $time"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1617980670132",
+      "conditions": "@remoption:exercise",
+      "dialog_node": "node_9_1617984413238",
+      "previous_sibling": "node_7_1617984411915"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, What can I do for you?"
+              },
+              {
+                "text": "Hi, What can I do for you?"
+              },
+              {
+                "text": "Hola, What can I do for you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_7_1617979746175",
+      "conditions": "@greeting:hello",
+      "dialog_node": "response_3_1617979868327"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon, What can I do for you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617979746175",
+      "conditions": "@greeting:(good afternoon)",
+      "dialog_node": "response_3_1617979935840",
+      "previous_sibling": "response_3_1617979868327"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good evening, What can I do for you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617979746175",
+      "conditions": "@greeting:(good evening)",
+      "dialog_node": "response_6_1617979980586",
+      "previous_sibling": "response_8_1617979978854"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning, What can I do for you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1617979746175",
+      "conditions": "@greeting:(good morning)",
+      "dialog_node": "response_8_1617979978854",
+      "previous_sibling": "response_3_1617979935840"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982923008",
+      "variable": "$Sunrisers",
+      "dialog_node": "slot_10_1618031925748",
+      "previous_sibling": "slot_8_1618031809771"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982925284",
+      "variable": "$time",
+      "dialog_node": "slot_10_1618032289707",
+      "previous_sibling": "slot_1_1618032257480"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1618035116205",
+      "variable": "$todo_5",
+      "dialog_node": "slot_10_1618036309996",
+      "previous_sibling": "slot_9_1618036298228"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1617984413238",
+      "variable": "$time",
+      "dialog_node": "slot_1_1618029771441"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982925284",
+      "variable": "$date",
+      "dialog_node": "slot_1_1618032257480",
+      "previous_sibling": "handler_1_1618032256761"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982925284",
+      "variable": "$Sunsetters_2",
+      "dialog_node": "slot_1_1618037122555",
+      "previous_sibling": "slot_6_1618032422822"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1618027465418",
+      "variable": "$date",
+      "dialog_node": "slot_2_1618028725534",
+      "previous_sibling": "handler_1_1618028724755"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1618027465418",
+      "variable": "$time",
+      "dialog_node": "slot_2_1618029043143",
+      "previous_sibling": "slot_2_1618028725534"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982923008",
+      "variable": "$date_2",
+      "dialog_node": "slot_2_1618036828725",
+      "previous_sibling": "slot_8_1618036708858"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982923008",
+      "variable": "$date_5",
+      "dialog_node": "slot_2_1618036872467",
+      "previous_sibling": "slot_3_1618036858667"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982925284",
+      "variable": "$Sunsetters_4",
+      "dialog_node": "slot_2_1618037155175",
+      "previous_sibling": "slot_7_1618037143607"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1617984414157",
+      "variable": "$time",
+      "dialog_node": "slot_3_1618030118726",
+      "previous_sibling": "handler_1_1618030117980"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982923008",
+      "variable": "$date",
+      "dialog_node": "slot_3_1618031792625"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1618035116205",
+      "variable": "$todo",
+      "dialog_node": "slot_3_1618035989771",
+      "previous_sibling": "handler_3_1618035989043"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982923008",
+      "variable": "$Sunrisers_2",
+      "dialog_node": "slot_3_1618036522518",
+      "previous_sibling": "slot_10_1618031925748"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982923008",
+      "variable": "$date_4",
+      "dialog_node": "slot_3_1618036858667",
+      "previous_sibling": "slot_6_1618036849163"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982923008",
+      "variable": "$Sunrisers_3",
+      "dialog_node": "slot_4_1618036604226",
+      "previous_sibling": "slot_3_1618036522518"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982923008",
+      "variable": "$Sunrisers_4",
+      "dialog_node": "slot_4_1618036682840",
+      "previous_sibling": "slot_4_1618036604226"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982925284",
+      "variable": "$time_4",
+      "dialog_node": "slot_4_1618037220835",
+      "previous_sibling": "slot_9_1618037208252"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1618035116205",
+      "variable": "$todo_3",
+      "dialog_node": "slot_5_1618036272059",
+      "previous_sibling": "slot_9_1618036253317"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982925284",
+      "variable": "$time_5",
+      "dialog_node": "slot_5_1618037229839",
+      "previous_sibling": "slot_4_1618037220835"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982925284",
+      "variable": "$Sunsetters",
+      "dialog_node": "slot_6_1618032422822",
+      "previous_sibling": "slot_10_1618032289707"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982923008",
+      "variable": "$date_3",
+      "dialog_node": "slot_6_1618036849163",
+      "previous_sibling": "slot_2_1618036828725"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982925284",
+      "variable": "$Sunsetters_3",
+      "dialog_node": "slot_7_1618037143607",
+      "previous_sibling": "slot_1_1618037122555"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982923008",
+      "variable": "$time",
+      "dialog_node": "slot_8_1618031809771",
+      "previous_sibling": "slot_3_1618031792625"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982923008",
+      "variable": "$Sunrisers_5",
+      "dialog_node": "slot_8_1618036708858",
+      "previous_sibling": "slot_4_1618036682840"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982925284",
+      "variable": "$Sunsetters_5",
+      "dialog_node": "slot_8_1618037171605",
+      "previous_sibling": "slot_2_1618037155175"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982925284",
+      "variable": "$time_2",
+      "dialog_node": "slot_8_1618037196771",
+      "previous_sibling": "slot_8_1618037171605"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1618035116205",
+      "variable": "$todo_2",
+      "dialog_node": "slot_9_1618036253317",
+      "previous_sibling": "slot_3_1618035989771"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1618035116205",
+      "variable": "$todo_4",
+      "dialog_node": "slot_9_1618036298228",
+      "previous_sibling": "slot_5_1618036272059"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1617982925284",
+      "variable": "$time_3",
+      "dialog_node": "slot_9_1618037208252",
+      "previous_sibling": "slot_8_1618037196771"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "hey! hi there this is your Prochat, I'm a productivity bot who will take care about all your day to day activities schedules and help you to maintain a discipline life"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Productivity Bot",
+  "language": "en",
+  "description": ""
+}
